@@ -33,6 +33,13 @@ The output file must be an .mp4 file.
 - [spatial-media tools](https://github.com/google/spatial-media/)
 - [grid_xd_yd_3840x1920.yml.gz](https://github.com/drNoob13/fisheyeStitcher/blob/master/utils/grid_xd_yd_3840x1920.yml.gz) located within `/usr/share/fisheye-stitcher`
 
+The script assumes that you have `spatialmedia` on your PATH. If you do not have it, create an executable file on your PATH (e.g. `/usr/local/bin/spatialmedia`) with the following contents:
+
+```sh
+#!/bin/sh
+python -m spatialmedia $@
+```
+
 ## Thanks
 
 Thanks a lot to drNoob13 for his project fisheyeStitcher. This script is merely a wrapper around that project.
